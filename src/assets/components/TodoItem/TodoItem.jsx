@@ -8,6 +8,8 @@ export default function TodoItem({id, todoText}) {
         dispatch(removeTodo({id: id}));
     }
 
+    console.log('render TODO-ITEM');
+
     return (
         <li className="todo-list__item">
             <span className="todo-list__text">
