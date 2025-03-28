@@ -4,8 +4,6 @@ import { memo } from "react";
 const RTKTodoList = memo(
     () => {
         const {data: todos, err, isLoading } = useGetTodosQuery();
-        // console.log(typeof(todos), typeof(err), typeof(isLoading));
-        // console.log(todos, err, isLoading);
         
         if (isLoading) {
             return <div className="loading" style={{padding: '40px', backgroundColor: 'yellow'}}>Loading...</div>
